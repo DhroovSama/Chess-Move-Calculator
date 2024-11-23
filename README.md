@@ -64,5 +64,6 @@ Here’s a quick look at how things are structured:
 
 ## **Preview**
 
-![Chess Game Preview](https://drive.google.com/uc?id=1Wid--s78Hu5cJoFqQIx5G9L3FPop3kLB)  
-*A chess game built with Unity, featuring real-time highlights and modular movement logic.*
+![Chess Game Preview](https://github.com/DhroovSama/Chess-Move-Calculator/blob/main/Assets/Chess/Preview%20Pics/Screenshot%202024-11-24%20035548.png)  
+![Chess Game Preview](https://github.com/DhroovSama/Chess-Move-Calculator/blob/main/Assets/Chess/Preview%20Pics/Screenshot%202024-11-24%20035858.png)  
+![Chess Game Preview](https://github.com/DhroovSama/Chess-Move-Calculator/blob/main/Assets/Chess/Preview%20Pics/Screenshot%202024-11-24%20035918.png)  
