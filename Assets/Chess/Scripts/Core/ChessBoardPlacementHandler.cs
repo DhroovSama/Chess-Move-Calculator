@@ -60,10 +60,10 @@ namespace Chess.Scripts.Core
             {
                 var highlight = Instantiate(_highlightPrefab, tile.position, Quaternion.identity, tile);
                 // Assuming the highlight prefab has a Renderer component
-                var renderer = highlight.GetComponent<Renderer>();
+                var renderer = highlight.GetComponent<SpriteRenderer>();
                 if (renderer != null)
                 {
-                    renderer.material.color = Color.red;
+                    renderer.color = Color.red;
                 }
             }
         }
