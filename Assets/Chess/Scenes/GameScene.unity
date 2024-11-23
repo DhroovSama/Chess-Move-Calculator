@@ -201,6 +201,8 @@ GameObject:
   - component: {fileID: 60290582}
   - component: {fileID: 60290583}
   - component: {fileID: 60290584}
+  - component: {fileID: 60290585}
+  - component: {fileID: 60290586}
   m_Layer: 0
   m_Name: Queen
   m_TagString: Untagged
@@ -287,6 +289,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 3
+--- !u!114 &60290585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60290581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &60290586
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60290581}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45
 --- !u!1 &81620425
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +787,8 @@ GameObject:
   - component: {fileID: 280411636}
   - component: {fileID: 280411637}
   - component: {fileID: 280411638}
+  - component: {fileID: 280411639}
+  - component: {fileID: 280411640}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -841,6 +875,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 7
+--- !u!114 &280411639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280411635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &280411640
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280411635}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38
 --- !u!1 &283930264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1151,8 @@ GameObject:
   - component: {fileID: 309589164}
   - component: {fileID: 309589165}
   - component: {fileID: 309589166}
+  - component: {fileID: 309589167}
+  - component: {fileID: 309589168}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -1173,6 +1239,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 3
+--- !u!114 &309589167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309589163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &309589168
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309589163}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1001 &348273156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1347,6 +1443,8 @@ GameObject:
   - component: {fileID: 354243239}
   - component: {fileID: 354243240}
   - component: {fileID: 354243241}
+  - component: {fileID: 354243242}
+  - component: {fileID: 354243243}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Untagged
@@ -1433,6 +1531,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 2
+--- !u!114 &354243242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354243238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &354243243
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354243238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45
 --- !u!1 &361327009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1840,8 @@ GameObject:
   - component: {fileID: 409402678}
   - component: {fileID: 409402680}
   - component: {fileID: 409402679}
+  - component: {fileID: 409402681}
+  - component: {fileID: 409402682}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -1798,6 +1928,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &409402681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409402677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &409402682
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409402677}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &418959813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,6 +2103,8 @@ GameObject:
   - component: {fileID: 436799126}
   - component: {fileID: 436799127}
   - component: {fileID: 436799128}
+  - component: {fileID: 436799129}
+  - component: {fileID: 436799130}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -2029,6 +2191,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 0
+--- !u!114 &436799129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436799125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &436799130
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436799125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &451512796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2232,8 @@ GameObject:
   - component: {fileID: 451512797}
   - component: {fileID: 451512798}
   - component: {fileID: 451512799}
+  - component: {fileID: 451512800}
+  - component: {fileID: 451512801}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -2126,6 +2320,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 4
+--- !u!114 &451512800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451512796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &451512801
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451512796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.43
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,6 +2758,8 @@ GameObject:
   - component: {fileID: 755527375}
   - component: {fileID: 755527376}
   - component: {fileID: 755527377}
+  - component: {fileID: 755527378}
+  - component: {fileID: 755527379}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -2620,6 +2846,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 6
+--- !u!114 &755527378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755527374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &755527379
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755527374}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.39
 --- !u!1 &877052905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,6 +3021,8 @@ GameObject:
   - component: {fileID: 969461836}
   - component: {fileID: 969461837}
   - component: {fileID: 969461838}
+  - component: {fileID: 969461839}
+  - component: {fileID: 969461840}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -2851,6 +3109,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 7
+--- !u!114 &969461839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969461835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &969461840
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969461835}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &1009644909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,6 +3284,8 @@ GameObject:
   - component: {fileID: 1126575666}
   - component: {fileID: 1126575667}
   - component: {fileID: 1126575668}
+  - component: {fileID: 1126575669}
+  - component: {fileID: 1126575670}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -3082,6 +3372,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 4
+--- !u!114 &1126575669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126575665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &1126575670
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126575665}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &1148948110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,6 +3614,8 @@ GameObject:
   - component: {fileID: 1285433204}
   - component: {fileID: 1285433205}
   - component: {fileID: 1285433206}
+  - component: {fileID: 1285433207}
+  - component: {fileID: 1285433208}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Untagged
@@ -3380,6 +3702,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 5
+--- !u!114 &1285433207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285433203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &1285433208
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285433203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45
 --- !u!1 &1328010219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,6 +3877,8 @@ GameObject:
   - component: {fileID: 1342563077}
   - component: {fileID: 1342563078}
   - component: {fileID: 1342563079}
+  - component: {fileID: 1342563080}
+  - component: {fileID: 1342563081}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -3611,6 +3965,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 1
+--- !u!114 &1342563080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342563076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &1342563081
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342563076}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.39
 --- !u!1 &1440357538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,6 +4271,8 @@ GameObject:
   - component: {fileID: 1486999843}
   - component: {fileID: 1486999844}
   - component: {fileID: 1486999845}
+  - component: {fileID: 1486999846}
+  - component: {fileID: 1486999847}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -3973,6 +4359,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 5
+--- !u!114 &1486999846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486999842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &1486999847
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486999842}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &1491303169
 GameObject:
   m_ObjectHideFlags: 0
@@ -4456,6 +4872,8 @@ GameObject:
   - component: {fileID: 1707383399}
   - component: {fileID: 1707383400}
   - component: {fileID: 1707383401}
+  - component: {fileID: 1707383402}
+  - component: {fileID: 1707383403}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -4542,6 +4960,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 6
+--- !u!114 &1707383402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707383398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &1707383403
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707383398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &1723691865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,6 +5001,8 @@ GameObject:
   - component: {fileID: 1723691866}
   - component: {fileID: 1723691867}
   - component: {fileID: 1723691868}
+  - component: {fileID: 1723691869}
+  - component: {fileID: 1723691870}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -4639,6 +5089,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 2
+--- !u!114 &1723691869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723691865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &1723691870
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723691865}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.385
 --- !u!1 &1751631076
 GameObject:
   m_ObjectHideFlags: 0
@@ -5014,6 +5494,8 @@ GameObject:
   - component: {fileID: 2003609497}
   - component: {fileID: 2003609498}
   - component: {fileID: 2003609499}
+  - component: {fileID: 2003609500}
+  - component: {fileID: 2003609501}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -5100,6 +5582,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 0
+--- !u!114 &2003609500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003609496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  column: 0
+--- !u!58 &2003609501
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003609496}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38
 --- !u!1 &2059979822
 GameObject:
   m_ObjectHideFlags: 0
