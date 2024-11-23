@@ -1,90 +1,104 @@
-using System;
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+using UnityEngine;
 
-[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-public sealed class ChessBoardPlacementHandler : MonoBehaviour
+namespace Chess.Scripts.Core
 {
+    public sealed class ChessBoardPlacementHandler : MonoBehaviour
+    {
+        [SerializeField] private GameObject[] _rowsArray;
+        [SerializeField] private GameObject _highlightPrefab;
 
-    [SerializeField] private GameObject[] _rowsArray;
-    [SerializeField] private GameObject _highlightPrefab;
+        private GameObject[,] _chessBoard;
+        private ChessPiece[,] boardState = new ChessPiece[8, 8];
 
-    private GameObject[,] _chessBoard;
+        internal static ChessBoardPlacementHandler Instance;
 
-    internal static ChessBoardPlacementHandler Instance;
-
-    private void Awake() {
-        Instance = this;
-        GenerateArray();
-    }
-
-    private void GenerateArray() {
-        _chessBoard = new GameObject[8, 8];
-        for (var i = 0; i < 8; i++) {
-            for (var j = 0; j < 8; j++) {
-                _chessBoard[i, j] = _rowsArray[i].transform.GetChild(j).gameObject;
-            }
-        }
-    }
-
-    internal GameObject GetTile(int i, int j) {
-        try {
-            return _chessBoard[i, j];
-        } catch (Exception) {
-            Debug.LogError("Invalid row or column.");
-            return null;
-        }
-    }
-
-    internal void Highlight(int row, int col) {
-        var tile = GetTile(row, col).transform;
-        if (tile == null) {
-            Debug.LogError("Invalid row or column.");
-            return;
+        private void Awake()
+        {
+            Instance = this;
+            GenerateArray();
         }
 
-        Instantiate(_highlightPrefab, tile.transform.position, Quaternion.identity, tile.transform);
-    }
-
-    internal void ClearHighlights() {
-        for (var i = 0; i < 8; i++) {
-            for (var j = 0; j < 8; j++) {
-                var tile = GetTile(i, j);
-                if (tile.transform.childCount <= 0) continue;
-                foreach (Transform childTransform in tile.transform) {
-                    Destroy(childTransform.gameObject);
+        private void GenerateArray()
+        {
+            _chessBoard = new GameObject[8, 8];
+            for (var i = 0; i < 8; i++)
+            {
+                for (var j = 0; j < 8; j++)
+                {
+                    _chessBoard[i, j] = _rowsArray[i].transform.GetChild(j).gameObject;
                 }
             }
         }
+
+        internal GameObject GetTile(int row, int column)
+        {
+            if (IsInsideBoard(row, column))
+            {
+                return _chessBoard[row, column];
+            }
+            else
+            {
+                Debug.LogError($"Invalid tile position: ({row}, {column})");
+                return null;
+            }
+        }
+
+        internal void Highlight(int row, int column)
+        {
+            var tile = GetTile(row, column)?.transform;
+            if (tile != null)
+            {
+                Instantiate(_highlightPrefab, tile.position, Quaternion.identity, tile);
+            }
+        }
+
+        internal void HighlightRed(int row, int column)
+        {
+            var tile = GetTile(row, column)?.transform;
+            if (tile != null)
+            {
+                var highlight = Instantiate(_highlightPrefab, tile.position, Quaternion.identity, tile);
+                // Assuming the highlight prefab has a Renderer component
+                var renderer = highlight.GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    renderer.material.color = Color.red;
+                }
+            }
+        }
+
+        internal void ClearHighlights()
+        {
+            foreach (var tile in _chessBoard)
+            {
+                if (tile.transform.childCount > 0)
+                {
+                    for (int i = tile.transform.childCount - 1; i >= 0; i--)
+                    {
+                        var child = tile.transform.GetChild(i);
+                        if (child.CompareTag("Highlight"))
+                        {
+                            Destroy(child.gameObject);
+                        }
+                    }
+                }
+            }
+        }
+
+        internal void RegisterPiece(ChessPiece piece)
+        {
+            boardState[piece.Row, piece.Column] = piece;
+        }
+
+        internal ChessPiece[,] GetBoardState()
+        {
+            return boardState;
+        }
+
+        private bool IsInsideBoard(int row, int column)
+        {
+            return row >= 0 && row < 8 && column >= 0 && column < 8;
+        }
     }
-
-
-    #region Highlight Testing
-
-    //private void Start()
-    //{
-    //    StartCoroutine(Testing());
-    //}
-
-    //private IEnumerator Testing()
-    //{
-    //    Highlight(2, 7);
-    //    yield return new WaitForSeconds(1f);
-
-    //    ClearHighlights();
-    //    Highlight(2, 7);
-    //    Highlight(2, 6);
-    //    Highlight(2, 5);
-    //    Highlight(2, 4);
-    //    yield return new WaitForSeconds(1f);
-
-    //    ClearHighlights();
-    //    Highlight(7, 7);
-    //    Highlight(2, 7);
-    //    yield return new WaitForSeconds(1f);
-    //}
-
-    #endregion
 }

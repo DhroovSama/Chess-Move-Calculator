@@ -302,7 +302,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 3
+  pieceType: 4
+  team: 0
 --- !u!58 &60290586
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -888,7 +890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 7
+  pieceType: 1
+  team: 0
 --- !u!58 &280411640
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1251,8 +1255,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 3
+  pieceType: 0
+  team: 0
 --- !u!58 &309589168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1544,7 +1550,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 2
+  pieceType: 3
+  team: 0
 --- !u!58 &354243243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1940,8 +1948,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 1
+  pieceType: 0
+  team: 0
 --- !u!58 &409402682
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2203,8 +2213,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 1
   column: 0
+  pieceType: 0
+  team: 0
 --- !u!58 &436799130
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2333,7 +2345,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 4
+  pieceType: 5
+  team: 0
 --- !u!58 &451512801
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2859,7 +2873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 6
+  pieceType: 2
+  team: 0
 --- !u!58 &755527379
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3121,8 +3137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 7
+  pieceType: 0
+  team: 0
 --- !u!58 &969461840
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3384,8 +3402,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 4
+  pieceType: 0
+  team: 0
 --- !u!58 &1126575670
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3715,7 +3735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 5
+  pieceType: 3
+  team: 0
 --- !u!58 &1285433208
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3978,7 +4000,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  column: 0
+  column: 1
+  pieceType: 2
+  team: 0
 --- !u!58 &1342563081
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4371,8 +4395,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 5
+  pieceType: 0
+  team: 0
 --- !u!58 &1486999847
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4972,8 +4998,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 6
+  pieceType: 0
+  team: 0
 --- !u!58 &1707383403
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5101,8 +5129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31412a668306a26449a87895e6d469fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 1
+  column: 2
+  pieceType: 0
+  team: 0
 --- !u!58 &1723691870
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5596,6 +5626,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 0
+  pieceType: 1
+  team: 0
 --- !u!58 &2003609501
 CircleCollider2D:
   m_ObjectHideFlags: 0
