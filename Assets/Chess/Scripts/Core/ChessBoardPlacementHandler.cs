@@ -59,7 +59,7 @@ namespace Chess.Scripts.Core
             if (tile != null)
             {
                 var highlight = Instantiate(_highlightPrefab, tile.position, Quaternion.identity, tile);
-                // Assuming the highlight prefab has a Renderer component
+
                 var renderer = highlight.GetComponent<SpriteRenderer>();
                 if (renderer != null)
                 {

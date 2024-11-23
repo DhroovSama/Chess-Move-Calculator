@@ -11,8 +11,8 @@ namespace Chess.Scripts.Core
         private ChessPlayerPlacementHandler placementHandler;
         private IMoveStrategy moveStrategy;
 
-        public int Row => placementHandler.row; // Get row from ChessPlayerPlacementHandler
-        public int Column => placementHandler.column; // Get column from ChessPlayerPlacementHandler
+        public int Row => placementHandler.row; 
+        public int Column => placementHandler.column; 
         public Team Team => team;
 
         private void Start()

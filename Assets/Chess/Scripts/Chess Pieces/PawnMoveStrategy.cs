@@ -8,9 +8,9 @@ namespace Chess.Scripts.Core
         public List<Vector2Int> GetPossibleMoves(int row, int column, ChessPiece[,] boardState, Team team)
         {
             var moves = new List<Vector2Int>();
-            int direction = team == Team.White ? -1 : 1; // White moves up (-1), Black moves down (+1)
+            int direction = team == Team.White ? -1 : 1; 
 
-            // Forward Move
+
             int nextRow = row + direction;
             if (IsInsideBoard(nextRow, column) && boardState[nextRow, column] == null)
             {
@@ -27,7 +27,6 @@ namespace Chess.Scripts.Core
                 }
             }
 
-            // Capture Moves
             int[] captureOffsets = { -1, 1 };
             foreach (int colOffset in captureOffsets)
             {

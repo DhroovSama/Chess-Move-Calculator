@@ -43,7 +43,7 @@ namespace Chess.Scripts.Core
                         {
                             moves.Add(new Vector2Int(currentRow, currentCol));
                         }
-                        break; // Can't move beyond this piece
+                        break; 
                     }
                 }
             }
